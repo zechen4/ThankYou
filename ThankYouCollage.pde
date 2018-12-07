@@ -1,5 +1,6 @@
+/* @pjs preload= 'thankyou.png.png"; */
 /* @pjs preload= 'heart.png"; */
-/* @pjs preload= 'thanyou.png.png"; */
+
 int X = 400;
 int Y = 400;
 int v = 5;
