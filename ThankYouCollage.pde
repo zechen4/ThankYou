@@ -4,12 +4,15 @@ int X = 400;
 int Y = 400;
 int v = 5;
 int bounce = 6;
+PImage heart;
 PImage img;
+
 boolean x1 = true;
 PFont mono;
 void setup(){
 size(600,600);
 background(255);
+heart = loadImage("heart.png");
 }
 
 void draw(){
@@ -18,8 +21,8 @@ background(0);
 fill(255);
 rect(50,50,500,500);
 noStroke();
-  img = loadImage("heart.png");
-image(img, 150,100,width /2, height/2);
+
+image(heart, 150,100,width /2, height/2);
 img = loadImage("thankyou.png.png");
 image(img, 20, 100,width/1.1,height/2);
 
@@ -49,10 +52,10 @@ if(mousePressed){
   
 
 img = loadImage("heart.png");
-image(img, 70,100,width /6, height/6);
-image(img, 430,100,width /6, height/6);
-image(img, 70,440,width /6, height/6);
-image(img, 430,440,width /6, height/6);
+image(heart, 70,100,width /6, height/6);
+image(heart, 430,100,width /6, height/6);
+image(heart, 70,440,width /6, height/6);
+image(heart, 430,440,width /6, height/6);
 
 
 
